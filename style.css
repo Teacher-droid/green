@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: 300; */
+}
+
+body {
+    background-color: #d2f5a4;
+    padding: 30px 0;
+}
+
+body>div {
+    background-color: #fff;
+    width: 900px;
+    margin: auto;
+    border: 2px solid #9bc444;
+}
+
+header nav {
+    background-image: url(img/bouton.png);
+    background-size: contain;
+    /* display: inline-block; */
+    /* width: 100px; */
+    padding-bottom: 10px;
+}
+
+header nav a {
+    display: inline-block;
+    width: 125px;
+    color: #fff;
+    border-right: 2px solid #d2f5a4;
+    padding: 10px 5px 0 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: 5px
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 60px 2fr 200px;
+    grid-gap: 25px;
+    grid-template-areas:
+        "rotated-title article-1 aside"
+        "rotated-title article-2 aside";
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.rotated-title {
+    grid-area: rotated-title;
+}
+
+.rotated-title h2 {
+    writing-mode: sideways-lr;
+}
+
+.article-1 {
+    grid-area: article-1;
+}
+
+.article-2 {
+    grid-area: article-2;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.green-txt{
+    color: #8bc654;
+}
+
+.letter-space{
+    letter-spacing: 5px;
+}
+
+.title_apple {
+    background-image: url(img/pomme.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 30px;
+    border-bottom: 1px solid #9bc444;
+    border-left: 1px solid #9bc444;
+    margin-bottom: 10px;
+}
+
+aside.aside h3{
+    border-bottom: 1px solid #9bc444;
+    border-left: 4px solid #9bc444; 
+    padding-left: 10px;
+}
+
+aside.aside div p{
+    margin: 20px 0;
+}
+
+
+
+footer{
+    text-align: right ;
+    margin: 25px 0;
+    padding-right: 15px ;
+}
